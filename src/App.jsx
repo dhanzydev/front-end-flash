@@ -1,9 +1,10 @@
 import React from "react";
-import Menu from "./components/Menu";
+import Home from "./pages/Home";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
-  return <Menu />;
+  return <Home />;
 };
 
 export default App;

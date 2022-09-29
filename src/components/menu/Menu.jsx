@@ -8,7 +8,7 @@ import styled from "styled-components";
 import "./index.css";
 import "react-bootstrap-typeahead/css/Typeahead.css";
 import { Typeahead } from "react-bootstrap-typeahead";
-import options from "../../data";
+import { options } from "../../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,

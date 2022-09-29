@@ -1,4 +1,4 @@
-export default [
+export const options = [
   {
     label: "Alabama",
     population: 4780127,
@@ -249,4 +249,27 @@ export default [
     region: "West",
   },
   { label: "Wyoming", population: 563767, capital: "Cheyenne", region: "West" },
+];
+
+export const carouselItem = [
+  {
+    id: 1,
+    img: "https://i.ibb.co/jbrTbz7/promo-1.jpg",
+  },
+  {
+    id: 2,
+    img: "https://i.ibb.co/VxbLHRC/promo-2.jpg",
+  },
+  {
+    id: 3,
+    img: "https://i.ibb.co/LNgNGZ2/promo-3.png",
+  },
+  {
+    id: 4,
+    img: "https://i.ibb.co/YbYzzHd/promo-4.png",
+  },
+  {
+    id: 5,
+    img: "https://i.ibb.co/g9rqXk9/promo-5.jpg",
+  },
 ];

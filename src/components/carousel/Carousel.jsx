@@ -3,6 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Container } from "react-bootstrap";
 import { carouselItem } from "../../data";
+import "./index.css";
 
 const responsive = {
   0: { items: 1 },

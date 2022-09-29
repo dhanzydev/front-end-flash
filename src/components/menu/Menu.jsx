@@ -15,7 +15,7 @@ import {
   faCartShopping,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
-import { Button, InputGroup } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 const ImageLogo = styled.img`
   width: 100px;
@@ -40,26 +40,25 @@ const Menu = () => {
   return (
     <>
       {["md"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 navbar-bg py-2">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="mb-3 navbar-bg py-2 border-bottom"
+        >
           <Container>
             <Navbar.Brand href="#">
               <ImageLogo src={Logo} className="img-fluid logo" />
             </Navbar.Brand>
             <div className="row w-100">
-              <div className="col-8 col-lg-10">
-                <InputGroup>
-                  <InputGroup.Text id="basic-addon1 border-0">
-                    <FontAwesomeIcon icon={faSearch} />
-                  </InputGroup.Text>
-                  <Typeahead
-                    id="basic-example"
-                    onChange={setSelected}
-                    options={options}
-                    placeholder="Cari Diamonds, Skins, Akun..."
-                    selected={selected}
-                    className="w-25"
-                  />
-                </InputGroup>
+              <div className="col-8 col-lg-10 d-flex">
+                <Form.Control
+                  type="text"
+                  placeholder="Cari Akun, Cari Voucher, Cari Diamonds, Skin..."
+                  className="border-0 searchInput"
+                />
+                <Button variant="light" className="btnSearch">
+                  <FontAwesomeIcon icon={faSearch} />
+                </Button>
               </div>
               <div className="col-2 col-lg-2">
                 <WrappedLogo className="wrapLogo">
